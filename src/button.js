@@ -1,9 +1,12 @@
 import { textColor, backgroundColor } from "./variables";
+import { buttonSize, boxShadow } from "./mixins";
 
 const css = {
   ".cssinjs-button": {
     color: textColor,
-    background: backgroundColor
+    background: backgroundColor,
+    ...buttonSize(),
+    ...boxShadow("0px 4px 5px #666", "2px 6px 10px #999")
   }
 };
 

@@ -10,12 +10,12 @@ export const buttonSize = ({
   paddingX = paddingXLg,
   fontSize = fontSizeLg,
   borderRadius = borderRadiusLg
-} = {}) => `
-  padding: ${paddingY} ${paddingX};
-  font-size: ${fontSize};
-  border-radius: ${borderRadius};
-`;
+} = {}) => ({
+  padding: `${paddingY} ${paddingX}`,
+  "font-size": `${fontSize}`,
+  "border-radius": `${borderRadius}`
+});
 
-export const boxShadow = (...shadows) => `
-  box-shadow: ${shadows}
-`;
+export const boxShadow = (...shadows) => ({
+  "box-shadow": `${shadows}`
+});
