@@ -13,5 +13,9 @@ export const buttonSize = ({
 } = {}) => `
   padding: ${paddingY} ${paddingX};
   font-size: ${fontSize};
-  border-radius: ${borderRadius}
+  border-radius: ${borderRadius};
+`;
+
+export const boxShadow = (...shadows) => `
+  box-shadow: ${shadows}
 `;
