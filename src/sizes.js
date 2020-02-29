@@ -1,4 +1,4 @@
-import * as sizes from "./constants";
+import * as sizes from "./variables";
 
 // button
 export default `
