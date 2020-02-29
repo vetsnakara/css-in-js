@@ -12,7 +12,12 @@ const button = `
   .cssinjs-button {
     color: #fff;
     background-color: green;
-    ${buttonSize(paddingYLg, paddingXLg, fontSizeLg, borderRadiusLg)}
+    ${buttonSize({
+      paddingY: paddingYLg,
+      paddingX: paddingXLg,
+      fontSize: fontSizeLg,
+      borderRadius: borderRadiusLg
+    })}
   }
 `;
 
